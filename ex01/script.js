@@ -1,4 +1,4 @@
-```javascript
+
 function calculateGrade(score) {
     if (score < 0 || score > 100) {
         return "Invalid score";
@@ -21,4 +21,16 @@ console.log(calculateGrade(0));
 console.log(calculateGrade(100));
 console.log(calculateGrade(-1));
 console.log(calculateGrade(101));
-```
+
+function checkAccess(age, hasTicket) {
+    if (age >= 18 && hasTicket === true) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(checkAccess(20, true));
+console.log(checkAccess(16, true));
+console.log(checkAccess(20, false));
+console.log(checkAccess(18, true));
